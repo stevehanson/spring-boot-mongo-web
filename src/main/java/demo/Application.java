@@ -40,7 +40,6 @@ public class Application {
 	@Autowired
 	MongoOperations mongo;
 
-	
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String loadHomePage(Model m) {
 		m.addAttribute("person", new Person());
